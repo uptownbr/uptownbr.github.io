@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Wine | UBR</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/fullcalendar.css" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <!--    font-family: 'Josefin Slab', serif;
+            font-family: 'Great Vibes', cursive;   -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Full Calendar  -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
+    <script type="text/javascript" src="../js/fullcalendar.js"></script>
+    <script type="text/javascript" src="../js/calendar.js"></script>
+
+    <!-- AngularJS Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="The Uptown Barrel Room is a wine bar " />
+    <meta name="keywords" content="Restaurant, Wine Bar, Food, Downtown Vancouver, Wine, Beer, Barrel Room, Uptown Barrel Room" />
+
+</head>
+<body ng-app="wines">
+
+    <!-- PRELOADER -->
+    <div id="st-preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
+    <!-- /PRELOADER -->
+    <!-- HEADER -->
+    <header id="header">
+        <nav class="navbar ubr-navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ubr-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo" href="index.html"><img class="hidden" src="../images/logo.png" alt=""></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="ubr-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../events/">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /HEADER -->
+    <!-- SLIDER -->
+    <section id="slider">
+        <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div id="header" class="item active">
+                    <div class="carousel-caption container">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <h1>The Uptown Barrel Room</h1>
+                                <h2>Wine Catalogue</h2>
+                                <p>Browse our vast wine selection from all around the globe, as well as local wines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /SLIDER -->
+   
+    <!-- MENU -->
+    <section id="menu" style="padding:100px 0 0px 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Our Wine Selection</h1>
+                        <p><i>Click on any of the categories below to get started<br /></i></p>
+
+                        <span class="ubr-border"></span>
+                    </div>
+                </div>
+
+                <div ng-controller="WineController" class="portfolio-wrapper" id="our-menu">
+                    <div class="col-md-12">
+                        <ul class="filter">
+                            <li><a class="active" href="#" data-filter="*">All</a></li>
+                            <li><a href="#" data-filter=".white">White</a></li>
+                            <li><a href="#" data-filter=".red">Red</a></li>
+                            <li><a href="#" data-filter=".rose">Rose</a></li>
+                            <li><a href="#" data-filter=".dessert">Dessert</a></li>
+                            <li><a href="#" data-filter=".sparkling">Sparkling</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-items">
+                        <div ng-repeat="wine in wines" class="col-md-4 col-sm-6 work-grid {{ wine.type }} ">
+                            <div class="portfolio-content">
+                                    <img class="img-responsive" src="{{ wine.src }}" alt="">
+                                    <div class="portfolio-overlay">
+                                        <h5 class="menuItemTitle">{{ wine.name }}</h5>
+                                        <p class="menuItemDesc">{{ wine.location }}</p>
+                                        <p class="menuItemDesc">{{ wine.type | uppercase }} WINE</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /MENU -->
+   
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6 footer-social-icons">
+                    <span>Write a Review</span>
+                    <a href="https://www.facebook.com/uptownbarrelroom/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.yelp.com/biz/the-uptown-barrel-room-vancouver" target="_blank"><i class="fa fa-yelp"></i></a>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6 copyright"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div class="scroll-up">
+        <ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
+    </div>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="../js/WineController.js"></script>
+
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="../js/waypoints.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+    <script type="text/javascript" src="../js/date.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Uptown Barrel Room | Vancouver, WA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <!--    font-family: 'Josefin Slab', serif;
+            font-family: 'Great Vibes', cursive;   -->
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- Full Calendar  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+
+    <!-- AngularJS Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="The Uptown Barrel Room is a wine bar "/>
+    <meta name="keywords" content="Restaurant, Wine Bar, Food, Downtown Vancouver, Wine, Beer, Barrel Room, Uptown Barrel Room" />
+
+</head>
+<body ng-app="dishes">
+
+	<!-- PRELOADER -->
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+    <!-- OVERLAY -->
+    <div id="overlay" class="flexParent" style="display:none;">
+        
+    </div>
+	<!-- /OVERLAY -->
+	<!-- HEADER -->
+	<header id="header">
+		<nav class="navbar ubr-navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ubr-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+				    	<span class="icon-bar"></span>
+					</button>
+					<a class="logo" href="index.html"><img class="hidden" src="images/logo.png" alt=""></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="ubr-navbar-collapse">
+                 
+					<ul class="nav navbar-nav navbar-right">
+				    	<li><a href="#header">Home</a></li>
+				    	<li class="nomobi"><a href="#aboutUs">About Us</a></li>
+				    	<li class="nomobi"><a href="#menu">Menu</a></li>
+                        <li class="nomobi"><a href="#reviews">Reviews</a></li>
+				    	<li class="nomobi"><a href="#contact">Contact</a></li>
+                        <li><a href="events/">Events</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- /HEADER -->
+
+
+
+	<!-- SLIDER -->
+	<section id="slider">
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">			
+			<div class="carousel-inner">
+				<div id="header" class="item active">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>The Uptown</h1>
+								<h2>Barrel Room</h2>
+								<p>Featuring an exquisite food selection, and a vast selection of local, as well as imported, wines – you’re sure to find the perfect combination at The Uptown Barrel Room. </p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>		
+		</div>
+    </section>
+	<!-- /SLIDER -->
+
+	
+	<!-- ABOUT US -->
+    <section id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>About Us</h1>
+                        <span class="ubr-border"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ubr-about">
+                    <h2><i class="fa fa-globe"></i>Locally Owned</h2>
+                    <p>UBR is locally owned and operated, doing our part to help local economic sustainability and prosperity.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ubr-about">
+                    <h2><i class="fa fa-glass"></i>Vast Wine Selection</h2>
+                    <p>We feature 50+ different, exquisite varieties of wine, both local and imported.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ubr-about">
+                    <h2><i class="fa fa-cutlery"></i> Fantastic Food</h2>
+                    <p>We are developing new and exciting items to update our menu with all the time. Come check it out!</p>
+                </div>
+                <div class="col-md-3 col-sm-6 ubr-about">
+                    <h2><i class="fa fa-group"></i> Stunning Service</h2>
+                    <p>We pride ourselves on providing a fast and friendly service to all of our customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /ABOUT US -->
+    <!-- MENU -->
+    <section id="menu" style="padding:100px 0 0px 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>Our Menu</h1>
+                        <p><i>Click on any of the categories below to get started<br />
+                               <i class="fa fa-asterisk" aria-hidden="true"> </i><b>Consuming raw or undercooked meats, poultry, seafood, shellfish,
+                                   or eggs may increase your risk of foodborne illness</b><br />
+                               <i class="fa fa-angle-double-right " aria-hidden="true"></i> <label class="">Gluten free options available</label>  
+                            </i></p>
+
+                        
+                        <span class="ubr-border"></span>
+                    </div>
+                </div>
+
+                <!--<div ng-controller="MenuController"  class="portfolio-wrapper" id="our-menu">
+                    <div class="col-md-12">
+                        <ul class="filter">
+                            <li><a class="active" href="#" data-filter=".none"></a></li>
+                            <li><a href="#" data-filter=".lunch">Lunch</a></li>
+                            <li><a href="#" data-filter=".dinner">Dinner</a></li>
+                            <li><a href="#" data-filter=".sides">Sides</a></li>
+                            <li><a href="#" data-filter=".brunch">Brunch</a></li>
+                            <li><a href="#" data-filter=".happyhr">Happy Hour</a></li>
+                            <li><a href="#" data-filter=".beer">Beer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-items">         
+                        
+                        <div ng-repeat="dish in dishes" class="menuItem help {{ dish.menu }}">
+                            <a href="#">{{dish.name}}</a><br />
+                         <br />
+                        </div><br />
+
+                        <div ng-repeat="dish in dishes"  class="col-sm-2 work-grid {{ dish.menu }} {{ dish.submenu }} ">
+                            <div class="portfolio-content">
+                                <a ng-show="dish.alink" href="{{ dish.alink }}" target="_blank">
+                                    <img class="img-responsive" src="{{ dish.src }}" alt="">
+                                    <div class="portfolio-overlay">
+                                        <h5 class="menuItemTitle">{{ dish.name }}</h5>
+                                        <p class="menuItemDesc">{{ dish.desc }}</p>
+                                    </div>
+                                </a>
+                                <img ng-hide="dish.alink" class="img-responsive" src="{{ dish.src }}" alt="">
+                                <div ng-hide="dish.alink" class="portfolio-overlay">
+                                    <h5 class="menuItemTitle">{{ dish.name }}</h5>
+                                    <p class="menuItemDesc">{{ dish.desc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<img src="/images/food/Halibut with Edamame Pasta.jpg" />-->
+                <div ng-controller="BtnController" style="padding:0 15px 0 15px;">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-7">
+                            <div class="button-group filters-button-group" id="filters">
+                                <!--<button class="button is-checked" data-filter="*">all</button>-->
+                                <button ng-repeat="btn in btns" class="button {{btn.def}} " data-filter=".{{btn.btn}}">{{btn.btn | uppercase }}</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-5">
+                            <div class="search input-group">
+                                <input type="text" onclick="sortItemHandler" class="form-control quicksearch" id="quicksearch" placeholder="Search" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row food" style="padding:0 8px 75px 8px;">
+                            <div id="container" ng-controller="MenuController">
+                                <a href="" ng-repeat="dish in dishes">
+                                    <div class="element-item {{dish.menu}}"
+                                         data-id="{{dish.src}}"
+                                         name="{{dish.name}}"
+                                         data-content="{{dish.desc}}"
+                                         data-isotope-sort-name="{{dish.menu}}">
+                                    <p class="name">{{dish.name}}</p></div>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- /MENU -->
+	
+	<!-- REVIEWS -->
+	<section id="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="overlay"></div>
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="st-reviewss">
+						<div class="item active text-center">
+							<p>"Where to start... The management and staff are all wonderful. The food is amazing. We went in a group so we could try several dishes. I highly recommend trying this place out... Great atmosphere!!"</p>
+							<div class="ubr-border"></div>
+							<div class="client-info">
+								<h5>Christen Enck</h5>
+								<span>Facebook Review</span>
+							</div>
+						</div>
+
+						<div class="item text-center">
+							<p>"Great addition to DT Vancouver! Super friendly staff, huge wine and liquor selection and some great beers on tap. They serve food too!"</p>
+							<div class="ubr-border"></div>
+							<div class="client-info">
+								<h5>Sullivan Cris Carter</h5>
+								<span>Facebook Review</span>
+							</div>
+						</div>
+						<div class="item text-center">
+							<p>"Fondue was amazing, great wine list! Great service and atmosphere &amp; steak bites yummy"</p>
+							<div class="ubr-border"></div>
+							<div class="client-info">
+								<h5>Danette Fierst</h5>
+								<span>Facebook Review</span>
+							</div>
+						</div>
+                        <div class="item text-center">
+                            <p>"Great environment, friendly staff and phenomenal food. Check it out, you will not be disappointed."</p>
+                            <div class="ubr-border"></div>
+                            <div class="client-info">
+                                <h5>Tessa Kampmann</h5>
+                                <span>Facebook Review</span>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /REVIEWS -->
+
+
+
+	<!-- FUN FACTS -->
+	<section id="fun-facts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="https://www.facebook.com/uptownbarrelroom/" target="_blank">
+                        <div class="fun-fact text-center">
+                            <h3><i class="fa fa-thumbs-o-up"></i> <span class="ubr-counter">875</span></h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </a>
+				</div>
+				<div class="col-sm-6">
+					<a href="https://www.facebook.com/uptownbarrelroom/" target="_blank">
+                        <div class="fun-fact text-center">
+                            <h3><i class="fa fa-star fa-6"></i> <span class="ubr-counter">4.6</span></h3>
+                            <p>Public Rating</p>
+                        </div>
+                    </a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /FUN FACTS -->
+
+	
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title col-xs-offset-1 col-lg-offset-0  ">
+						<h1>Contact us</h1>
+						<span class="ubr-border"></span>
+					</div>
+				</div>
+				<div class="col-md-4 contact-info">
+                    <p class="col-lg-offset-0 col-md-offset-0 col-md-12 col-sm-4 col-sm-offset-1 col-xs-offset-1 contact-content">
+                        <b>Monday:</b> <i>CLOSED</i><br />
+                        <b>Tuesday:</b> 11am - 10pm<br />
+                        <b>Wednesday:</b> 11am - 10pm<br />
+                        <b>Thursday:</b> 11am - 10pm<br />
+                        <b>Friday:</b> 11am - 12pm<br />
+                        <b>Saturday:</b> 11am - 12pm<br />
+                        <b>Sunday:</b> 11am - 8pm<br />
+                    </p>
+                    
+                    <p class="col-lg-offset-0 col-md-12 col-sm-6 col-xs-offset-1 st-address"><i class="fa fa-map-marker"></i> <strong>2011 Main Street Vancouver, WA 98660</strong></p>
+                    <p class="col-lg-offset-0 col-md-12 col-sm-6 col-xs-offset-1 st-phone"><i class="fa fa-mobile"></i> <strong><a href="tel:1-360-949-7255">1 (360) 949 - 7255</a></strong></p>
+                    <p class="col-lg-offset-0 col-md-12 col-sm-6 col-xs-offset-1 st-email"><i class="fa fa-envelope-o"></i> <strong><a href="mailto:general@uptownbarrelroom.com">general@uptownbarrelroom.com</a></strong></p>
+                    <p class="col-lg-offset-0 col-md-12 col-sm-6 col-xs-offset-1 st-website"><i class="fa fa-globe"></i> <strong>www.uptownbarrelroom.com</strong></p>
+
+				</div>
+                        <div class="maps col-md-7 col-md-offset-1">
+                            <iframe width="600" height="450" frameborder="0" style="border:0"
+                                    src="https://www.google.com/maps/embed/v1/place?q=2011%20Main%20Street%20Vancouver%20Washington&key=AIzaSyCmzcMckeH27uL5_uCd-X-jJWLkFaTi6aM"
+                                    allowfullscreen></iframe>
+                        </div>
+
+				<!-- COMING SOON CONTACT FORM
+                    <div class="col-sm-7 col-sm-offset-1">
+					<form action="php/send-contact.php" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" required="required" placeholder="Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" required="required" placeholder="Email*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="subject" placeholder="Subject">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="website" placeholder="Website">
+							</div>
+							<div class="col-sm-12">
+								<textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
+							</div>
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
+							</div>
+						</div>
+					</form>
+				</div>-->
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
+					<span>Write a Review</span>
+                    <a href="https://www.facebook.com/uptownbarrelroom/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.yelp.com/biz/the-uptown-barrel-room-vancouver" target="_blank"><i class="fa fa-yelp"></i></a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 copyright"></div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+	<div class="scroll-up">
+		<ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
+	</div>
+    
+    <!-- Controllers -->
+    <script type="text/javascript" src="js/MenuController.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+
+    <script src="http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="js/isotopeMenu.js"></script>
+</body>
+</html>
