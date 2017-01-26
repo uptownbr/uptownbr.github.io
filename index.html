@@ -140,7 +140,8 @@
     </section>
     <!-- /ABOUT US -->
     <!-- MENU -->
-    <section id="menu" style="padding:100px 0 0px 0">
+    <!-- doesn't work when accessing from file directory (i.e. github) 
+	<section id="menu" style="padding:100px 0 0px 0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -156,51 +157,10 @@
                         <span class="ubr-border"></span>
                     </div>
                 </div>
-
-                <!--<div ng-controller="MenuController"  class="portfolio-wrapper" id="our-menu">
-                    <div class="col-md-12">
-                        <ul class="filter">
-                            <li><a class="active" href="#" data-filter=".none"></a></li>
-                            <li><a href="#" data-filter=".lunch">Lunch</a></li>
-                            <li><a href="#" data-filter=".dinner">Dinner</a></li>
-                            <li><a href="#" data-filter=".sides">Sides</a></li>
-                            <li><a href="#" data-filter=".brunch">Brunch</a></li>
-                            <li><a href="#" data-filter=".happyhr">Happy Hour</a></li>
-                            <li><a href="#" data-filter=".beer">Beer</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="portfolio-items">         
-                        
-                        <div ng-repeat="dish in dishes" class="menuItem help {{ dish.menu }}">
-                            <a href="#">{{dish.name}}</a><br />
-                         <br />
-                        </div><br />
-
-                        <div ng-repeat="dish in dishes"  class="col-sm-2 work-grid {{ dish.menu }} {{ dish.submenu }} ">
-                            <div class="portfolio-content">
-                                <a ng-show="dish.alink" href="{{ dish.alink }}" target="_blank">
-                                    <img class="img-responsive" src="{{ dish.src }}" alt="">
-                                    <div class="portfolio-overlay">
-                                        <h5 class="menuItemTitle">{{ dish.name }}</h5>
-                                        <p class="menuItemDesc">{{ dish.desc }}</p>
-                                    </div>
-                                </a>
-                                <img ng-hide="dish.alink" class="img-responsive" src="{{ dish.src }}" alt="">
-                                <div ng-hide="dish.alink" class="portfolio-overlay">
-                                    <h5 class="menuItemTitle">{{ dish.name }}</h5>
-                                    <p class="menuItemDesc">{{ dish.desc }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!--<img src="/images/food/Halibut with Edamame Pasta.jpg" />-->
                 <div ng-controller="BtnController" style="padding:0 15px 0 15px;">
                     <div class="row">
                         <div class="col-sm-9 col-md-7">
                             <div class="button-group filters-button-group" id="filters">
-                                <!--<button class="button is-checked" data-filter="*">all</button>-->
                                 <button ng-repeat="btn in btns" class="button {{btn.def}} " data-filter=".{{btn.btn}}">{{btn.btn | uppercase }}</button>
                             </div>
                         </div>
@@ -228,7 +188,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 	<!-- /MENU -->
 	
 	<!-- REVIEWS -->
